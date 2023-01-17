@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hyres</h1>
+    <p id="hello" ></p>
+    <script>
+
+
+    var nums=new Set();
+    nums.add(11);
+    nums.add(22);
+    nums.add(33);
+    nums.add(44);
+    nums.add(44);
+    nums.add(11);
+    nums.add("One");
+    nums.add("Two");
+    nums.add("11");//string
+
+    nums.add(new Number(11));//new reference/address
+    nums.add(new Number(11));//new reference/address
+    nums.add(new Number(11));//new reference/address
+    
+    var obj=new Number(99);
+    nums.add(obj);
+    nums.add(obj);
+    
+    
+    for(n of nums){
+      document.write(n+" ");
+    }
+    document.write(" ==>Size:"+nums.size);
+    
+
+    const arr = [10, 20, 30];
+	let result = 0;
+	
+	arr.forEach(myFunction);
+	
+	document.write("Result: " , result)
+	function myFunction(value, index, array) {
+	  result += value; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//const fruits = ["apple","orange","banana"];
+
+//fruits.forEach(list);
+//function list (value,index){
+//console.log(index,value)
+//}
+
+//fruits.map(uppercasefg);
+//function uppercasefg(value){
+//console.log(
+//value.toUpperCase());
+//};
+
+/*let newfreu = fruits.every(
+function check (value,array,index){
+return value.length>3;
+
+}
+
+);
+console.log(newfreu);
+
+
+
+
+const points = [40, 100, 1, 5, 25, 10];
+ 
+let a = points.reduce(min);
+
+function min (value, minn,index,array){
+   
+   return (value + minn)/array.length;
+     
+}
+console.log(a);
+
+
+/*
+var arr = [5,1,9,5,7];
+var smallest = arr.reduce((prev,next) => prev>next ? next : prev);
+var largest = arr.reduce((prev,next) => prev<next ? next : prev);
+
+
+const points = [40, 100, 1, 5, 25, 10];
+ 
+let a = points.reduce(min);
+
+function min (value, minn,index){
+   
+    if (value>minn){
+       value= minn;
+     
+    }
+    return value;
+
+   
+}
+console.log(a);
+
+
+
+console.log(smallest);
+console.log(largest);*/
+/*
+var smallest = arr[0];
+for (var i=0; i<arr.length; i++){
+    if (arr[i]<smallest){
+        smallest = arr[i];
+    }
+}
+return smallest;
+
+*/
+
+//var arr = [["Hello","Welcome"],["Saman" ,"Shafique "],["Software","Student"]];
+//console.log(arr[1][1]);
+
+    </script>
+</body>
+</html>

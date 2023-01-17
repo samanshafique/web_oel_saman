@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <style>
+
+body {
+  background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
+  color: #514B64;
+  min-height: 100vh;
+}
+
+.align{
+    margin-right: 40px;
+}
+code {
+  background: #fff;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  margin: 0 0.3rem;
+}
+.Rentedtbl table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Rentedtbl td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+.Rentedtbl tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.nav-item{
+  float: right;
+}
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+    background-color: #5c5a77;
+  color: white;
+}
+
+
+table {
+  border-spacing: 30px;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+  
+
+
+}
+    </style>
+  
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+
+</head>
+<body>
+    
+<div class="sidebar">
+    <a  href="Dashboard.html">Dashboard</a>
+    <a  class="active" href="CollectRent.html">Pay/Collect Rent</a>
+    <a href="#about">About</a>
+  </div>
+  
+ 
+
+
+
+
+  
+  <div class="content">
+    <div style="padding-left:16px">
+
+       
+          
+        <div class="container">
+            <a href="#" class="navbar-brand">
+           
+              <img src="https://homes.rently.com/static/media/logo.c59857935c07fd671273.png" width="120" alt="" class="d-inline-block align-middle mr-2">
+           
+          
+            </a>
+     
+        <p></p>
+         
+        <div class="topnav">
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a href="#" class="nav-link">Profiles <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"> <a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>
+                 
+              
+                </ul>
+              </div>
+        </div>
+
+        
+          
+          </div>
+        
+      
+        <p>..</p>
+
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openCity('allrentproduct')">Rent Details of Products</button>
+      
+    
+          </div>
+          <div id="allrentproduct" class="w3-container city">
+
+
+        <h3>Products For Collect Rent</h3>
+           
+<table class="Rentedtbl" >
+    <tr >
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Action</th>
+     
+    </tr>
+    <tr>
+        <td>Razi Mirrors</td>
+    <td>4900</td>
+       <td>    <button type="button" class="btn btn-success">Collect Rent</button></td>
+   
+    </tr>
+    <tr>
+        <td>Hattie confo Sofa</td>
+    <td>3000</td>
+         <td>    <button type="button" class="btn btn-success">Collect Rent</button></td>
+     
+    </tr>
+    <tr>
+        <td>Empire Outdoor Seat</td>
+        <td>400</td>
+      <td>    <button type="button" class="btn btn-success">Collect Rent</button></td>
+    </tr>
+    <tr>
+        <td>Palm Tree</td>
+        <td>2000</td>
+     
+      <td>    <button type="button" class="btn btn-success">Collect Rent</button></td>
+    
+    </tr>
+   
+  
+  
+   
+  </table>
+<br>
+
+  <h3>Products For Pay Rent</h3>
+           
+  <table class="Rentedtbl" >
+      <tr >
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Action</th>
+       
+      </tr>
+      <tr>
+        <td>Emerson 2 Sofa</td>
+        <td>7000</td>
+        <td>    <button type="button" class="btn btn-primary">Pay Rent</button></td>
+     
+      </tr>
+      <tr>
+        <td>Hattie Beige Sofa</td>
+        <td>10000</td>
+        <td>    <button type="button" class="btn btn-primary">Pay Rent</button></td>
+       
+      </tr>
+      <tr>
+        <td>Helix Coffee Table</td>
+        <td>1000</td>
+        <td>    <button type="button" class="btn btn-primary">Pay Rent</button></td>
+      </tr>
+      <tr>
+        <td>Bed And Bath</td>
+        <td>6000</td>
+       
+        <td>    <button type="button" class="btn btn-primary">Pay Rent</button></td>
+      
+      </tr>
+     
+     
+    </table>
+
+
+
+          </div>
+
+
+<br><br>
+        
+  
+      </div>
+    
+    
+    
+      <footer>
+        <p>Copyright © 2022 Rentely. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+
+</html>

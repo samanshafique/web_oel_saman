@@ -14,6 +14,7 @@ router.route('/register')
   .get((req, res) => {
     res.render('register')
   })
+  
   .post(async (req, res, next) => {
     try {
       const result = userSchema.validate(req.body)
